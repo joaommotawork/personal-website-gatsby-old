@@ -1,0 +1,143 @@
+@import '../../../styles/variables.scss';
+
+b {
+    color: $accent-mainColor;
+}
+
+.SkillsContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.Illustration {
+    height: 400px;
+    width: 90%;
+}
+
+.Skills {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.SkillsText {
+    margin: 5%;
+    font-size: 200%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.SkillsIcons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.BlockContainer {
+    display: flex;
+}
+
+.BlockItemContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 10% 10% 10%;
+}
+
+.BlockItem {
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+}
+
+.BlockItemStatic {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: 0;
+}
+
+.BlockText {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 10%;
+}
+
+.Title {
+    color: $accent-mainColor;
+}
+
+.Icon {
+    width: 20%;
+}
+
+@media only screen and (max-width: 1300px) {
+    .SkillsIcons {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .BlockItemStatic {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        z-index: 0;
+    }
+
+    .BlockItem {
+        width: 125px;
+        height: 125px;
+        z-index: 1;
+    }
+
+    .BlockContainer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .SkillsContainer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Illustration {
+        height: 200px;
+        width: 100%;
+    }
+
+    .SkillsIcons {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .BlockItemStatic {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        z-index: 0;
+    }
+
+    .BlockItem {
+        width: 125px;
+        height: 125px;
+        z-index: 1;
+    }
+
+    .BlockContainer {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,86 @@
+@import '../../../styles/variables.scss';
+
+b {
+    color: $accent-mainColor;
+}
+
+.ProfileContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.Illustration {
+    height: 400px;
+    width: 100%;
+}
+
+.Profile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ProfilePicture {
+    height: 20rem;
+}
+
+.ProfileText {
+    margin: 5%;
+    font-size: 200%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ProfileTextWithIcon {
+    display: flex;
+    width: 100%;
+}
+
+.BlockContainer {
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BlockText {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 10%;
+}
+
+.Title {
+    color: $accent-mainColor;
+}
+
+.Icon {
+    width: 20%;
+}
+
+@media only screen and (max-width: 1300px) {
+}
+
+@media only screen and (max-width: 768px) {
+    .ProfileContainer {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Illustration {
+        height: 200px;
+        width: 100%;
+    }
+
+    .ProfilePicture {
+        height: 200px;
+    }
+}
