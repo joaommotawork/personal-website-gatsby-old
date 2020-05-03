@@ -49,6 +49,12 @@ module.exports = {
                     appId: process.env.FIREBASE_APP_ID
                 }
             }
+        },
+        {
+            resolve: `gatsby-plugin-google-analytics`,
+            options: {
+                trackingId: process.env.FIREBASE_MEASUREMENT_ID
+            }
         }
     ]
 }
