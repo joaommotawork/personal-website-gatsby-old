@@ -1,4 +1,5 @@
-import React, { Suspense, lazy } from 'react'
+import React from 'react'
+import loadable from '@loadable/component'
 
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
@@ -6,27 +7,19 @@ import Home from '../components/Pages/Home'
 
 import '../styles/global.scss'
 
-const AboutMe = lazy(() => import('../components/Pages/AboutMe'))
-const Profile = lazy(() => import('../components/Pages/Profile'))
-const Skills = lazy(() => import('../components/Pages/Skills'))
-const Contacts = lazy(() => import('../components/Pages/Contacts'))
+const AboutMe = loadable(() => import('../components/Pages/AboutMe'))
+const Profile = loadable(() => import('../components/Pages/Profile'))
+const Skills = loadable(() => import('../components/Pages/Skills'))
+const Contacts = loadable(() => import('../components/Pages/Contacts'))
 
 const IndexPage = () => (
     <Layout>
         <SEO title="João Mota Web Developer & Designer" />
         <Home />
-        <Suspense fallback={<h1>Still Loading…</h1>}>
-            <AboutMe />
-        </Suspense>
-        <Suspense fallback={<h1>Still Loading…</h1>}>
-            <Profile />
-        </Suspense>
-        <Suspense fallback={<h1>Still Loading…</h1>}>
-            <Skills />
-        </Suspense>
-        <Suspense fallback={<h1>Still Loading…</h1>}>
-            <Contacts />
-        </Suspense>
+        <AboutMe />
+        <Profile />
+        <Skills />
+        <Contacts />
     </Layout>
 )
 
