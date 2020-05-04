@@ -1,6 +1,7 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
 import Tilt from 'react-tilt'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 import Illustration from '../../../resources/illustrations/Profile.svg'
 import ProfilePicture from '../../../resources/images/Profile.png'
@@ -25,11 +26,15 @@ const Profile = () => {
                         </Tilt>
                     </div>
                     <div className={classes.Profile}>
-                        <img
-                            className={classes.ProfilePicture}
-                            src={ProfilePicture}
-                            alt="Profile"
-                        />
+                        <div className={classes.ProfilePicture}>
+                            <LazyLoadImage
+                                alt="Profile"
+                                effect="blur"
+                                src={ProfilePicture}
+                                height="100%"
+                                width="100%"
+                            />
+                        </div>
                         <div className={classes.ProfileText}>
                             <label>
                                 WEB DEVELOPER <b>&</b> DESIGNER
