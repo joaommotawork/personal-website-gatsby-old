@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFlag } from '@fortawesome/free-solid-svg-icons'
 
 import Illustration from '../../../resources/illustrations/Profile.svg'
-import ProfilePicture from '../../../resources/images/Profile.png'
+import ProfilePicture from '../../../resources/images/Profile.webp'
 import Calendar from '../../../resources/icons/Calendar.svg'
 import Flag from '../../../resources/icons/Flag.svg'
 

@@ -22,7 +22,11 @@ module.exports = {
                 name: `joaommota`,
                 short_name: `joaommota`,
                 start_url: `/`,
-                icon: 'src/resources/logo/ExportFavicon.png'
+                icon: 'src/resources/logo/ExportFavicon.png',
+                background_color: `#ffffff`,
+                theme_color: `#008b7f`,
+                display: `standalone`,
+                prefer_related_applications: true
             }
         },
         `gatsby-plugin-offline`,
