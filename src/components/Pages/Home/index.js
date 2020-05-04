@@ -74,7 +74,7 @@ const Home = () => {
                             />
                         </div>
                         <div className={classes.OutsideText}>
-                            <label className={classes.Love}>I ♥:⠀</label>
+                            <label className={classes.Love}>I ♥⠀</label>
                             <Typed
                                 strings={[
                                     'DEVELOPING',
