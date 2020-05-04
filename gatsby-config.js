@@ -59,16 +59,6 @@ module.exports = {
             options: {
                 trackingId: 'G-YP5RE7PSBY'
             }
-        },
-        {
-            resolve: `gatsby-plugin-prefetch-google-fonts`,
-            options: {
-                fonts: [
-                    {
-                        family: `Oswald`
-                    }
-                ]
-            }
         }
     ]
 }
