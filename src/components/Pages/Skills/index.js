@@ -2,7 +2,9 @@ import React from 'react'
 import Fade from 'react-reveal/Fade'
 import Tilt from 'react-tilt'
 import ReactVivus from 'react-vivus'
+import { Tooltip, Zoom, withStyles } from '@material-ui/core'
 
+import useWindowSize from '../../../hooks/useWindowSize'
 import Illustration from '../../../resources/illustrations/Programming.svg'
 import HTML from '../../../resources/skills/Skills_HTML.svg'
 import HTMLStatic from '../../../resources/skills/Skills_HTMLStatic.svg'
@@ -20,6 +22,31 @@ import IllustratorStatic from '../../../resources/skills/Skills_IllustratorStati
 import classes from './index.module.scss'
 
 const Skills = () => {
+    const Size = useWindowSize()
+
+    let FontTooltip = withStyles({
+        tooltip: {
+            fontSize: '80%',
+            backgroundColor: '#868686'
+        },
+        arrow: {
+            color: '#868686'
+        }
+    })(Tooltip)
+
+    if (Size.width < 768) {
+        FontTooltip = withStyles({
+            tooltip: {
+                fontSize: '100%',
+                backgroundColor: '#868686'
+            },
+            arrow: {
+                color: '#868686'
+            }
+        })(Tooltip)
+    }
+
+    console.log('Size: ', Size.width, 'px ', Size.height, 'px')
     return (
         <Fade left>
             <div className={classes.SkillsMainContainer}>
@@ -30,114 +57,257 @@ const Skills = () => {
                             <div className={classes.SkillsIcons}>
                                 <div className={classes.BlockContainer}>
                                     <div className={classes.BlockItemContainer}>
-                                        <img
-                                            className={classes.BlockItemStatic}
-                                            src={HTMLStatic}
-                                            alt="HTML"
-                                        />
-
-                                        <ReactVivus
-                                            id="html"
-                                            className={classes.BlockItem}
-                                            option={{
-                                                file: HTML,
-                                                animTimingFunction: 'EASE',
-                                                type: 'oneByOne',
-                                                duration: 50
-                                            }}
-                                        />
+                                        <FontTooltip
+                                            disableFocusListener
+                                            TransitionComponent={Zoom}
+                                            title="HTML"
+                                            placement={
+                                                Size.width < 360
+                                                    ? 'top'
+                                                    : Size.width < 1200 &&
+                                                      Size.width > 360
+                                                    ? 'top'
+                                                    : 'top'
+                                            }
+                                            interactive
+                                            leaveTouchDelay={3000}
+                                            arrow
+                                        >
+                                            <div>
+                                                <img
+                                                    className={
+                                                        classes.BlockItemStatic
+                                                    }
+                                                    src={HTMLStatic}
+                                                    alt="HTML"
+                                                />
+                                                <ReactVivus
+                                                    id="html"
+                                                    className={
+                                                        classes.BlockItem
+                                                    }
+                                                    option={{
+                                                        file: HTML,
+                                                        animTimingFunction:
+                                                            'EASE',
+                                                        type: 'oneByOne',
+                                                        duration: 50
+                                                    }}
+                                                />
+                                            </div>
+                                        </FontTooltip>
                                     </div>
                                     <div className={classes.BlockItemContainer}>
-                                        <img
-                                            className={classes.BlockItemStatic}
-                                            src={CSSStatic}
-                                            alt="CSS"
-                                        />
+                                        <FontTooltip
+                                            disableFocusListener
+                                            TransitionComponent={Zoom}
+                                            title="CSS"
+                                            placement={
+                                                Size.width < 360
+                                                    ? 'right'
+                                                    : Size.width < 1200 &&
+                                                      Size.width > 360
+                                                    ? 'right-start'
+                                                    : 'top'
+                                            }
+                                            interactive
+                                            leaveTouchDelay={3000}
+                                            arrow
+                                        >
+                                            <div>
+                                                <img
+                                                    className={
+                                                        classes.BlockItemStatic
+                                                    }
+                                                    src={CSSStatic}
+                                                    alt="CSS"
+                                                />
 
-                                        <ReactVivus
-                                            id="css"
-                                            className={classes.BlockItem}
-                                            option={{
-                                                file: CSS,
-                                                animTimingFunction: 'EASE',
-                                                type: 'oneByOne',
-                                                duration: 50
-                                            }}
-                                        />
+                                                <ReactVivus
+                                                    id="css"
+                                                    className={
+                                                        classes.BlockItem
+                                                    }
+                                                    option={{
+                                                        file: CSS,
+                                                        animTimingFunction:
+                                                            'EASE',
+                                                        type: 'oneByOne',
+                                                        duration: 50
+                                                    }}
+                                                />
+                                            </div>
+                                        </FontTooltip>
                                     </div>
                                     <div className={classes.BlockItemContainer}>
-                                        <img
-                                            className={classes.BlockItemStatic}
-                                            src={JavaScriptStatic}
-                                            alt="JavaScript"
-                                        />
+                                        <FontTooltip
+                                            disableFocusListener
+                                            TransitionComponent={Zoom}
+                                            title="JavaScript"
+                                            placement={
+                                                Size.width < 360
+                                                    ? 'bottom'
+                                                    : Size.width < 1200 &&
+                                                      Size.width > 360
+                                                    ? 'right-start'
+                                                    : 'top'
+                                            }
+                                            interactive
+                                            leaveTouchDelay={3000}
+                                            arrow
+                                        >
+                                            <div>
+                                                <img
+                                                    className={
+                                                        classes.BlockItemStatic
+                                                    }
+                                                    src={JavaScriptStatic}
+                                                    alt="JavaScript"
+                                                />
 
-                                        <ReactVivus
-                                            id="javaScript"
-                                            className={classes.BlockItem}
-                                            option={{
-                                                file: JavaScript,
-                                                animTimingFunction: 'EASE',
-                                                type: 'oneByOne',
-                                                duration: 50
-                                            }}
-                                        />
+                                                <ReactVivus
+                                                    id="javaScript"
+                                                    className={
+                                                        classes.BlockItem
+                                                    }
+                                                    option={{
+                                                        file: JavaScript,
+                                                        animTimingFunction:
+                                                            'EASE',
+                                                        type: 'oneByOne',
+                                                        duration: 50
+                                                    }}
+                                                />
+                                            </div>
+                                        </FontTooltip>
                                     </div>
                                 </div>
                                 <div className={classes.BlockContainer}>
                                     <div className={classes.BlockItemContainer}>
-                                        <img
-                                            className={classes.BlockItemStatic}
-                                            src={ReactIconStatic}
-                                            alt="React"
-                                        />
+                                        <FontTooltip
+                                            disableFocusListener
+                                            TransitionComponent={Zoom}
+                                            title="React"
+                                            placement={
+                                                Size.width < 360
+                                                    ? 'top'
+                                                    : Size.width < 1200 &&
+                                                      Size.width > 360
+                                                    ? 'top'
+                                                    : 'top'
+                                            }
+                                            interactive
+                                            leaveTouchDelay={3000}
+                                            arrow
+                                        >
+                                            <div>
+                                                <img
+                                                    className={
+                                                        classes.BlockItemStatic
+                                                    }
+                                                    src={ReactIconStatic}
+                                                    alt="React"
+                                                />
 
-                                        <ReactVivus
-                                            id="react"
-                                            className={classes.BlockItem}
-                                            option={{
-                                                file: ReactIcon,
-                                                animTimingFunction: 'EASE',
-                                                type: 'oneByOne',
-                                                duration: 50
-                                            }}
-                                        />
+                                                <ReactVivus
+                                                    id="react"
+                                                    className={
+                                                        classes.BlockItem
+                                                    }
+                                                    option={{
+                                                        file: ReactIcon,
+                                                        animTimingFunction:
+                                                            'EASE',
+                                                        type: 'oneByOne',
+                                                        duration: 50
+                                                    }}
+                                                />
+                                            </div>
+                                        </FontTooltip>
                                     </div>
                                     <div className={classes.BlockItemContainer}>
-                                        <img
-                                            className={classes.BlockItemStatic}
-                                            src={PhotoshopStatic}
-                                            alt="Photoshop"
-                                        />
+                                        <FontTooltip
+                                            disableFocusListener
+                                            TransitionComponent={Zoom}
+                                            title="Photoshop"
+                                            placement={
+                                                Size.width < 360
+                                                    ? 'left'
+                                                    : Size.width < 1200 &&
+                                                      Size.width > 360
+                                                    ? 'left-start'
+                                                    : 'top'
+                                            }
+                                            interactive
+                                            leaveTouchDelay={3000}
+                                            arrow
+                                        >
+                                            <div>
+                                                <img
+                                                    className={
+                                                        classes.BlockItemStatic
+                                                    }
+                                                    src={PhotoshopStatic}
+                                                    alt="Photoshop"
+                                                />
 
-                                        <ReactVivus
-                                            id="photoshop"
-                                            className={classes.BlockItem}
-                                            option={{
-                                                file: Photoshop,
-                                                animTimingFunction: 'EASE',
-                                                type: 'oneByOne',
-                                                duration: 50
-                                            }}
-                                        />
+                                                <ReactVivus
+                                                    id="photoshop"
+                                                    className={
+                                                        classes.BlockItem
+                                                    }
+                                                    option={{
+                                                        file: Photoshop,
+                                                        animTimingFunction:
+                                                            'EASE',
+                                                        type: 'oneByOne',
+                                                        duration: 50
+                                                    }}
+                                                />
+                                            </div>
+                                        </FontTooltip>
                                     </div>
                                     <div className={classes.BlockItemContainer}>
-                                        <img
-                                            className={classes.BlockItemStatic}
-                                            src={IllustratorStatic}
-                                            alt="Illustrator"
-                                        />
+                                        <FontTooltip
+                                            disableFocusListener
+                                            TransitionComponent={Zoom}
+                                            title="illustrator"
+                                            placement={
+                                                Size.width < 360
+                                                    ? 'bottom'
+                                                    : Size.width < 1200 &&
+                                                      Size.width > 360
+                                                    ? 'left-start'
+                                                    : 'top'
+                                            }
+                                            interactive
+                                            leaveTouchDelay={3000}
+                                            arrow
+                                        >
+                                            <div>
+                                                <img
+                                                    className={
+                                                        classes.BlockItemStatic
+                                                    }
+                                                    src={IllustratorStatic}
+                                                    alt="Illustrator"
+                                                />
 
-                                        <ReactVivus
-                                            id="illustrator"
-                                            className={classes.BlockItem}
-                                            option={{
-                                                file: Illustrator,
-                                                animTimingFunction: 'EASE',
-                                                type: 'oneByOne',
-                                                duration: 50
-                                            }}
-                                        />
+                                                <ReactVivus
+                                                    id="illustrator"
+                                                    className={
+                                                        classes.BlockItem
+                                                    }
+                                                    option={{
+                                                        file: Illustrator,
+                                                        animTimingFunction:
+                                                            'EASE',
+                                                        type: 'oneByOne',
+                                                        duration: 50
+                                                    }}
+                                                />
+                                            </div>
+                                        </FontTooltip>
                                     </div>
                                 </div>
                             </div>

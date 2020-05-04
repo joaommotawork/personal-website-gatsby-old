@@ -3,7 +3,7 @@ import Granim from 'granim'
 import Particles from 'react-particles-js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFileAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedinIn, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 import Wave from '../../../resources/svg/Wave.svg'
 
@@ -107,6 +107,20 @@ const Contacts = () => {
                                     <FontAwesomeIcon
                                         className={classes.Icons}
                                         icon={faLinkedinIn}
+                                        size="2x"
+                                    />
+                                </a>
+                            </button>
+                        </div>
+                        <div className={classes.BlockItem}>
+                            <button className={classes.ButtonSocial}>
+                                <a
+                                    href="https://wa.me/351964758077?text=Contact%20Me%20for%20Business%20Inquiries"
+                                    target="__blank"
+                                >
+                                    <FontAwesomeIcon
+                                        className={classes.Icons}
+                                        icon={faWhatsapp}
                                         size="2x"
                                     />
                                 </a>
