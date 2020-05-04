@@ -121,9 +121,9 @@ b {
 }
 
 @media only screen and (max-width: 768px) {
-    .Skills {
-        width: 40%;
-        margin-bottom: 10%;
+    .SkillsMainContainer {
+        height: 100%;
+        width: 100%;
     }
 
     .SkillsContainer {
@@ -135,9 +135,14 @@ b {
         align-items: center;
     }
 
+    .Skills {
+        width: 100%;
+    }
+
     .Illustration {
         height: 200px;
         width: 100%;
+        margin-bottom: 10%;
     }
 
     .SkillsIcons {
