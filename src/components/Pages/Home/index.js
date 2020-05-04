@@ -123,7 +123,9 @@ const Home = () => {
                         }
                     }}
                 />
-                <img className={classes.Wave} src={Wave} alt="Wave" />
+                <div className={classes.WaveWrapper}>
+                    <img className={classes.Wave} src={Wave} alt="Wave" />
+                </div>
             </div>
         </VisibilitySensor>
     )

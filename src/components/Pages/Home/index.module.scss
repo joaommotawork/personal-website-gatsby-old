@@ -63,12 +63,18 @@
     color: white;
 }
 
+.WaveWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
 .Wave {
-    position: absolute;
+    width: 100%;
+    min-width: 1400px;
     bottom: 0;
     margin: 0 0 -1%;
     margin-top: auto;
-    min-width: 1400px;
     z-index: 0;
 }
 
