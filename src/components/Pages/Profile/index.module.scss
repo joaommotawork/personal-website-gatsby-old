@@ -32,6 +32,7 @@ b {
 
 .Profile {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,6 +45,8 @@ b {
 
 .ProfileText {
     margin: 5% 0 0 0;
+    width: 100%;
+    height: 100%;
     font-size: 200%;
     display: flex;
     flex-direction: column;
@@ -52,12 +55,14 @@ b {
 }
 
 .ProfileTextWithIcon {
-    display: flex;
     width: 100%;
+    height: 100%;
+    display: flex;
 }
 
 .BlockContainer {
-    margin: 5% 0 0 0;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,9 +81,6 @@ b {
 .Icon {
     width: 20%;
     min-width: 30px;
-}
-
-@media only screen and (max-width: 1300px) {
 }
 
 @media only screen and (max-width: 768px) {

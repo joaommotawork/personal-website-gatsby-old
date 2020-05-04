@@ -1,11 +1,9 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
 import Tilt from 'react-tilt'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFlag } from '@fortawesome/free-solid-svg-icons'
 
 import Illustration from '../../../resources/illustrations/Profile.svg'
-import ProfilePicture from '../../../resources/images/Profile.webp'
+import ProfilePicture from '../../../resources/images/Profile.png'
 import Calendar from '../../../resources/icons/Calendar.svg'
 import Flag from '../../../resources/icons/Flag.svg'
 
