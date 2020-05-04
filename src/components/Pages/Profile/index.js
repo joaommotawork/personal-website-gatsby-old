@@ -1,6 +1,8 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
 import Tilt from 'react-tilt'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFlag } from '@fortawesome/free-solid-svg-icons'
 
 import Illustration from '../../../resources/illustrations/Profile.svg'
 import ProfilePicture from '../../../resources/images/Profile.png'
@@ -39,7 +41,7 @@ const Profile = () => {
                                     <img
                                         className={classes.Icon}
                                         src={Calendar}
-                                        alt="Calendar Icon"
+                                        alt="Calendar"
                                     />
                                     <div className={classes.BlockText}>
                                         <label className={classes.Title}>
@@ -52,7 +54,7 @@ const Profile = () => {
                                     <img
                                         className={classes.Icon}
                                         src={Flag}
-                                        alt="Flag Icon"
+                                        alt="Flag"
                                     />
                                     <div className={classes.BlockText}>
                                         <label className={classes.Title}>
