@@ -25,6 +25,12 @@
     width: 50%;
 }
 
+@media only screen and (max-width: 1300px) {
+    .Text {
+        width: 75%;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .AboutMeContainer {
         height: 100%;
@@ -35,6 +41,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom: 10%;
+
+        p {
+            font-size: 200%;
+        }
     }
 }

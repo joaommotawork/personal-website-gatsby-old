@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Fade from 'react-reveal/Fade'
 import Tilt from 'react-tilt'
-import VisibilitySensor from 'react-visibility-sensor'
 import ReactVivus from 'react-vivus'
 
 import Illustration from '../../../resources/illustrations/Programming.svg'
@@ -21,213 +20,141 @@ import IllustratorStatic from '../../../resources/skills/Skills_IllustratorStati
 import classes from './index.module.scss'
 
 const Skills = () => {
-    const [useShow, setShow] = useState(false)
-
-    const onChange = isVisible => {
-        isVisible ? setShow(true) : setShow(false)
-    }
-
     return (
-        <VisibilitySensor
-            partialVisibility
-            offset={250}
-            minTopValue={250}
-            onChange={onChange}
-        >
-            <div className={classes.SkillsContainer}>
-                <Fade left opposite when={useShow}>
-                    <div className={classes.SkillsContainer}>
-                        <div className={classes.Skills}>
-                            <div className={classes.SkillsText}>
-                                <div className={classes.SkillsIcons}>
-                                    <div className={classes.BlockContainer}>
-                                        <div
-                                            className={
-                                                classes.BlockItemContainer
-                                            }
-                                        >
-                                            <img
-                                                className={
-                                                    classes.BlockItemStatic
-                                                }
-                                                src={HTMLStatic}
-                                                alt="HTML"
-                                            />
-                                            {useShow ? (
-                                                <ReactVivus
-                                                    id="html"
-                                                    className={
-                                                        classes.BlockItem
-                                                    }
-                                                    option={{
-                                                        file: HTML,
-                                                        animTimingFunction:
-                                                            'EASE',
-                                                        type: 'oneByOne',
-                                                        duration: 50
-                                                    }}
-                                                />
-                                            ) : null}
-                                        </div>
-                                        <div
-                                            className={
-                                                classes.BlockItemContainer
-                                            }
-                                        >
-                                            <img
-                                                className={
-                                                    classes.BlockItemStatic
-                                                }
-                                                src={CSSStatic}
-                                                alt="CSS"
-                                            />
-                                            {useShow ? (
-                                                <ReactVivus
-                                                    id="css"
-                                                    className={
-                                                        classes.BlockItem
-                                                    }
-                                                    option={{
-                                                        file: CSS,
-                                                        animTimingFunction:
-                                                            'EASE',
-                                                        type: 'oneByOne',
-                                                        duration: 50
-                                                    }}
-                                                />
-                                            ) : null}
-                                        </div>
-                                        <div
-                                            className={
-                                                classes.BlockItemContainer
-                                            }
-                                        >
-                                            <img
-                                                className={
-                                                    classes.BlockItemStatic
-                                                }
-                                                src={JavaScriptStatic}
-                                                alt="JavaScript"
-                                            />
-                                            {useShow ? (
-                                                <ReactVivus
-                                                    id="javaScript"
-                                                    className={
-                                                        classes.BlockItem
-                                                    }
-                                                    option={{
-                                                        file: JavaScript,
-                                                        animTimingFunction:
-                                                            'EASE',
-                                                        type: 'oneByOne',
-                                                        duration: 50
-                                                    }}
-                                                />
-                                            ) : null}
-                                        </div>
+        <Fade left>
+            <div className={classes.SkillsMainContainer}>
+                <h1>SKILLS</h1>
+                <div className={classes.SkillsContainer}>
+                    <div className={classes.Skills}>
+                        <div className={classes.SkillsText}>
+                            <div className={classes.SkillsIcons}>
+                                <div className={classes.BlockContainer}>
+                                    <div className={classes.BlockItemContainer}>
+                                        <img
+                                            className={classes.BlockItemStatic}
+                                            src={HTMLStatic}
+                                            alt="HTML"
+                                        />
+
+                                        <ReactVivus
+                                            id="html"
+                                            className={classes.BlockItem}
+                                            option={{
+                                                file: HTML,
+                                                animTimingFunction: 'EASE',
+                                                type: 'oneByOne',
+                                                duration: 50
+                                            }}
+                                        />
                                     </div>
-                                    <div className={classes.BlockContainer}>
-                                        <div
-                                            className={
-                                                classes.BlockItemContainer
-                                            }
-                                        >
-                                            <img
-                                                className={
-                                                    classes.BlockItemStatic
-                                                }
-                                                src={ReactIconStatic}
-                                                alt="React"
-                                            />
-                                            {useShow ? (
-                                                <ReactVivus
-                                                    id="react"
-                                                    className={
-                                                        classes.BlockItem
-                                                    }
-                                                    option={{
-                                                        file: ReactIcon,
-                                                        animTimingFunction:
-                                                            'EASE',
-                                                        type: 'oneByOne',
-                                                        duration: 50
-                                                    }}
-                                                />
-                                            ) : null}
-                                        </div>
-                                        <div
-                                            className={
-                                                classes.BlockItemContainer
-                                            }
-                                        >
-                                            <img
-                                                className={
-                                                    classes.BlockItemStatic
-                                                }
-                                                src={PhotoshopStatic}
-                                                alt="Photoshop"
-                                            />
-                                            {useShow ? (
-                                                <ReactVivus
-                                                    id="photoshop"
-                                                    className={
-                                                        classes.BlockItem
-                                                    }
-                                                    option={{
-                                                        file: Photoshop,
-                                                        animTimingFunction:
-                                                            'EASE',
-                                                        type: 'oneByOne',
-                                                        duration: 50
-                                                    }}
-                                                />
-                                            ) : null}
-                                        </div>
-                                        <div
-                                            className={
-                                                classes.BlockItemContainer
-                                            }
-                                        >
-                                            <img
-                                                className={
-                                                    classes.BlockItemStatic
-                                                }
-                                                src={IllustratorStatic}
-                                                alt="Illustrator"
-                                            />
-                                            {useShow ? (
-                                                <ReactVivus
-                                                    id="illustrator"
-                                                    className={
-                                                        classes.BlockItem
-                                                    }
-                                                    option={{
-                                                        file: Illustrator,
-                                                        animTimingFunction:
-                                                            'EASE',
-                                                        type: 'oneByOne',
-                                                        duration: 50
-                                                    }}
-                                                />
-                                            ) : null}
-                                        </div>
+                                    <div className={classes.BlockItemContainer}>
+                                        <img
+                                            className={classes.BlockItemStatic}
+                                            src={CSSStatic}
+                                            alt="CSS"
+                                        />
+
+                                        <ReactVivus
+                                            id="css"
+                                            className={classes.BlockItem}
+                                            option={{
+                                                file: CSS,
+                                                animTimingFunction: 'EASE',
+                                                type: 'oneByOne',
+                                                duration: 50
+                                            }}
+                                        />
+                                    </div>
+                                    <div className={classes.BlockItemContainer}>
+                                        <img
+                                            className={classes.BlockItemStatic}
+                                            src={JavaScriptStatic}
+                                            alt="JavaScript"
+                                        />
+
+                                        <ReactVivus
+                                            id="javaScript"
+                                            className={classes.BlockItem}
+                                            option={{
+                                                file: JavaScript,
+                                                animTimingFunction: 'EASE',
+                                                type: 'oneByOne',
+                                                duration: 50
+                                            }}
+                                        />
+                                    </div>
+                                </div>
+                                <div className={classes.BlockContainer}>
+                                    <div className={classes.BlockItemContainer}>
+                                        <img
+                                            className={classes.BlockItemStatic}
+                                            src={ReactIconStatic}
+                                            alt="React"
+                                        />
+
+                                        <ReactVivus
+                                            id="react"
+                                            className={classes.BlockItem}
+                                            option={{
+                                                file: ReactIcon,
+                                                animTimingFunction: 'EASE',
+                                                type: 'oneByOne',
+                                                duration: 50
+                                            }}
+                                        />
+                                    </div>
+                                    <div className={classes.BlockItemContainer}>
+                                        <img
+                                            className={classes.BlockItemStatic}
+                                            src={PhotoshopStatic}
+                                            alt="Photoshop"
+                                        />
+
+                                        <ReactVivus
+                                            id="photoshop"
+                                            className={classes.BlockItem}
+                                            option={{
+                                                file: Photoshop,
+                                                animTimingFunction: 'EASE',
+                                                type: 'oneByOne',
+                                                duration: 50
+                                            }}
+                                        />
+                                    </div>
+                                    <div className={classes.BlockItemContainer}>
+                                        <img
+                                            className={classes.BlockItemStatic}
+                                            src={IllustratorStatic}
+                                            alt="Illustrator"
+                                        />
+
+                                        <ReactVivus
+                                            id="illustrator"
+                                            className={classes.BlockItem}
+                                            option={{
+                                                file: Illustrator,
+                                                animTimingFunction: 'EASE',
+                                                type: 'oneByOne',
+                                                duration: 50
+                                            }}
+                                        />
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className={classes.Illustration}>
-                            <Tilt className="Tilt" options={{ max: 10 }}>
-                                <img
-                                    className={classes.Illustration}
-                                    src={Illustration}
-                                    alt="Illustration"
-                                />
-                            </Tilt>
-                        </div>
                     </div>
-                </Fade>
+                    <div className={classes.Illustration}>
+                        <Tilt className="Tilt" options={{ max: 10 }}>
+                            <img
+                                className={classes.Illustration}
+                                src={Illustration}
+                                alt="Illustration"
+                            />
+                        </Tilt>
+                    </div>
+                </div>
             </div>
-        </VisibilitySensor>
+        </Fade>
     )
 }
 

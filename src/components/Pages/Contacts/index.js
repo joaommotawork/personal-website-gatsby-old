@@ -7,8 +7,8 @@ import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 
 import Wave from '../../../resources/svg/Wave.svg'
 
-import pdfWhite from '../../../resources/pdf/Curriculum Vitae - White.pdf'
-import pdfBlack from '../../../resources/pdf/Curriculum Vitae - Black.pdf'
+import pdfLight from '../../../resources/pdf/João Mota CV - Light.pdf'
+import pdfDark from '../../../resources/pdf/João Mota CV - Dark.pdf'
 
 import classes from './index.module.scss'
 
@@ -66,59 +66,63 @@ const Contacts = () => {
                 }}
             />
             <div className={classes.MainContainer}>
-                <div className={classes.BlockContainer}>
+                <div className={classes.BlockMainContainer}>
                     <h1>DOWNLOAD MY CV:</h1>
-                    <div className={classes.BlockItem}>
-                        <button className={classes.Button}>
-                            <a href={pdfWhite} download>
-                                <FontAwesomeIcon
-                                    className={classes.Icons}
-                                    icon={faFileAlt}
-                                />
-                                {'⠀'}
-                                WHITE
-                            </a>
-                        </button>
-                    </div>
-                    <div className={classes.BlockItem}>
-                        <button className={classes.Button}>
-                            <a href={pdfBlack} download>
-                                <FontAwesomeIcon
-                                    className={classes.Icons}
-                                    icon={faFileAlt}
-                                />
-                                {'⠀'}
-                                BLACK
-                            </a>
-                        </button>
+                    <div className={classes.BlockContainer}>
+                        <div className={classes.BlockItem}>
+                            <button className={classes.Button}>
+                                <a href={pdfLight} download>
+                                    <FontAwesomeIcon
+                                        className={classes.Icons}
+                                        icon={faFileAlt}
+                                    />
+                                    {'⠀'}
+                                    LIGHT
+                                </a>
+                            </button>
+                        </div>
+                        <div className={classes.BlockItem}>
+                            <button className={classes.Button}>
+                                <a href={pdfDark} download>
+                                    <FontAwesomeIcon
+                                        className={classes.Icons}
+                                        icon={faFileAlt}
+                                    />
+                                    {'⠀'}
+                                    DARK
+                                </a>
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <div className={classes.BlockContainer}>
+                <div className={classes.BlockMainContainer}>
                     <h1>CONTACT ME: </h1>
-                    <div className={classes.BlockItem}>
-                        <button className={classes.ButtonSocial}>
-                            <a
-                                href="https://www.linkedin.com/in/johnymoty/"
-                                target="__blank"
-                            >
-                                <FontAwesomeIcon
-                                    className={classes.Icons}
-                                    icon={faLinkedinIn}
-                                    size="2x"
-                                />
-                            </a>
-                        </button>
-                    </div>
-                    <div className={classes.BlockItem}>
-                        <button className={classes.ButtonSocial}>
-                            <a href="mailto:joaommota.work@gmail.com">
-                                <FontAwesomeIcon
-                                    className={classes.Icons}
-                                    icon={faEnvelope}
-                                    size="2x"
-                                />
-                            </a>
-                        </button>
+                    <div className={classes.BlockContainer}>
+                        <div className={classes.BlockItem}>
+                            <button className={classes.ButtonSocial}>
+                                <a
+                                    href="https://www.linkedin.com/in/johnymoty/"
+                                    target="__blank"
+                                >
+                                    <FontAwesomeIcon
+                                        className={classes.Icons}
+                                        icon={faLinkedinIn}
+                                        size="2x"
+                                    />
+                                </a>
+                            </button>
+                        </div>
+                        <div className={classes.BlockItem}>
+                            <button className={classes.ButtonSocial}>
+                                <a href="mailto:joaommota.work@gmail.com">
+                                    <FontAwesomeIcon
+                                        className={classes.Icons}
+                                        icon={faEnvelope}
+                                        size="2x"
+                                    />
+                                </a>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

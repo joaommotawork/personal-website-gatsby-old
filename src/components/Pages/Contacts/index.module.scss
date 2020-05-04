@@ -1,7 +1,7 @@
 @import '../../../styles/variables.scss';
 
 .ContactsContainer {
-    height: 100vh;
+    height: 50vh;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -18,31 +18,43 @@
     position: absolute;
     z-index: -2;
     width: 100%;
-    height: 100vh;
+    height: 50vh;
 }
 
 .Particles {
     position: absolute;
     z-index: -2;
     width: 100%;
-    height: 100vh;
+    height: 50vh;
 }
 
 .MainContainer {
     position: absolute;
-    height: 100vh;
+    height: 50vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.BlockContainer {
+.BlockMainContainer {
     margin-top: 20vh;
-    width: 100%;
-    height: 80vh;
+    width: 40%;
+    height: 30vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+    h1 {
+        color: $background-color;
+    }
+}
+
+.BlockContainer {
+    width: 100%;
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
     z-index: 1;
@@ -53,7 +65,7 @@
 }
 
 .Button {
-    padding: 10% 10% 10% 10%;
+    padding: 5% 5% 5% 5%;
     height: 100%;
     background: $background-color;
     border: none;
@@ -72,13 +84,13 @@
         font-weight: bolder;
         text-decoration: none;
         color: $accent-mainColor;
-        font-size: 300%;
+        font-size: 200%;
     }
 }
 
 .ButtonSocial {
-    height: 100px;
-    width: 100px;
+    height: 75px;
+    width: 75px;
     background: $background-color;
     border: none;
     border-radius: 50%;
@@ -90,13 +102,27 @@
         font-weight: bolder;
         text-decoration: none;
         color: $accent-mainColor;
-        font-size: 300%;
+        font-size: 200%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .BlockMainContainer {
+        margin-top: 10%;
+    }
+
+    .BlockContainer {
+        flex-direction: column;
+    }
+
+    .BlockItem:first-child {
+        margin-bottom: 3%;
     }
 }
 
 @media only screen and (max-width: 768px) {
     .ContactsContainer {
-        min-height: 800px;
+        min-height: 700px;
         height: 100%;
         width: 100%;
         margin: 0;
@@ -104,28 +130,33 @@
     }
 
     .Granim {
-        min-height: 800px;
+        min-height: 700px;
         position: absolute;
         z-index: -2;
         width: 100%;
-        height: 100%;
+        height: 60%;
     }
 
     .Particles {
-        min-height: 800px;
+        min-height: 700px;
         position: absolute;
         z-index: -2;
         width: 100%;
-        height: 100%;
+        height: 60%;
+    }
+
+    .BlockMainContainer {
+        margin-top: 0;
     }
 
     .MainContainer {
-        min-height: 800px;
+        min-height: 700px;
         position: absolute;
-        height: 100%;
+        height: 60%;
         width: 100%;
         display: flex;
         flex-direction: column;
+        justify-content: flex-end;
     }
 
     .BlockContainer {
@@ -143,54 +174,46 @@
         }
     }
 
-    .BlockContainer:first-child {
-        margin-top: 20%;
-    }
+    // .Button {
+    //     padding: 10% 10% 10% 10%;
+    //     width: 100%;
+    //     height: 100%;
+    //     background: $background-color;
+    //     border: none;
+    //     border-radius: 100px;
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
 
-    .BlockItem {
-        padding-bottom: 5%;
-    }
+    //     .Icons {
+    //         color: $accent-mainColor;
+    //     }
 
-    .Button {
-        padding: 10% 10% 10% 10%;
-        width: 100%;
-        height: 100%;
-        background: $background-color;
-        border: none;
-        border-radius: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    //     a {
+    //         width: 150px;
+    //         height: 100%;
+    //         font-weight: bolder;
+    //         text-decoration: none;
+    //         color: $accent-mainColor;
+    //         font-size: 200%;
+    //     }
+    // }
 
-        .Icons {
-            color: $accent-mainColor;
-        }
+    // .ButtonSocial {
+    //     height: 75px;
+    //     width: 75px;
+    //     background: $background-color;
+    //     border: none;
+    //     border-radius: 50%;
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
 
-        a {
-            width: 150px;
-            height: 100%;
-            font-weight: bolder;
-            text-decoration: none;
-            color: $accent-mainColor;
-            font-size: 200%;
-        }
-    }
-
-    .ButtonSocial {
-        height: 75px;
-        width: 75px;
-        background: $background-color;
-        border: none;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        a {
-            font-weight: bolder;
-            text-decoration: none;
-            color: $accent-mainColor;
-            font-size: 150%;
-        }
-    }
+    //     a {
+    //         font-weight: bolder;
+    //         text-decoration: none;
+    //         color: $accent-mainColor;
+    //         font-size: 150%;
+    //     }
+    // }
 }
