@@ -15,6 +15,20 @@
     z-index: 0;
 }
 
+.Granim {
+    position: absolute;
+    z-index: -2;
+    width: 100vw;
+    height: 100vh;
+}
+
+.Particles {
+    position: absolute;
+    z-index: -2;
+    width: 100vw;
+    height: 100vh;
+}
+
 .MainContainer {
     position: absolute;
     height: 100vh;
@@ -37,20 +51,6 @@
     h1 {
         color: $background-color;
     }
-}
-
-.Granim {
-    position: absolute;
-    z-index: -2;
-    width: 100vw;
-    height: 100vh;
-}
-
-.Particles {
-    position: absolute;
-    z-index: -2;
-    width: 100vw;
-    height: 100vh;
 }
 
 .Button {
@@ -105,11 +105,28 @@
         padding: 0;
     }
 
+    .Granim {
+        min-height: 800px;
+        position: absolute;
+        z-index: -2;
+        width: 100%;
+        height: 100%;
+    }
+
+    .Particles {
+        min-height: 800px;
+        position: absolute;
+        z-index: -2;
+        width: 100%;
+        height: 100%;
+    }
+
     .Wave {
         min-width: 500px;
     }
 
     .MainContainer {
+        min-height: 800px;
         position: absolute;
         height: 100%;
         width: 100%;
