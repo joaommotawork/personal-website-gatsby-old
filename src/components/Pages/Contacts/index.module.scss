@@ -1,7 +1,6 @@
 @import '../../../styles/variables.scss';
 
 .ContactsContainer {
-    min-height: 500px;
     height: 100vh;
     width: 100%;
     margin: 0;
@@ -97,7 +96,7 @@
 
 @media only screen and (max-width: 768px) {
     .ContactsContainer {
-        min-height: 500px;
+        min-height: 800px;
         height: 100%;
         width: 100%;
         margin: 0;
@@ -105,6 +104,7 @@
     }
 
     .Granim {
+        min-height: 800px;
         position: absolute;
         z-index: -2;
         width: 100%;
@@ -112,6 +112,7 @@
     }
 
     .Particles {
+        min-height: 800px;
         position: absolute;
         z-index: -2;
         width: 100%;
@@ -119,6 +120,7 @@
     }
 
     .MainContainer {
+        min-height: 800px;
         position: absolute;
         height: 100%;
         width: 100%;
