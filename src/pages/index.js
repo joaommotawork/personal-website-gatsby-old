@@ -1,6 +1,5 @@
 import React from 'react'
 import loadable from '@loadable/component'
-import { LazyLoadComponent } from 'react-lazy-load-image-component'
 
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
@@ -17,18 +16,10 @@ const IndexPage = () => (
     <Layout>
         <SEO title="João Mota Web Developer & Designer" />
         <Home />
-        <LazyLoadComponent>
-            <AboutMe />
-        </LazyLoadComponent>
-        <LazyLoadComponent>
-            <Profile />
-        </LazyLoadComponent>
-        <LazyLoadComponent>
-            <Skills />
-        </LazyLoadComponent>
-        <LazyLoadComponent>
-            <Contacts />
-        </LazyLoadComponent>
+        <AboutMe />
+        <Profile />
+        <Skills />
+        <Contacts />
     </Layout>
 )
 
