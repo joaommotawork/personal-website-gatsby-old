@@ -12,7 +12,7 @@ import '../styles/global.scss'
 
 const IndexPage = () => (
     <Layout>
-        <SEO title="Home" />
+        <SEO title="João Mota Web Developer & Designer" />
         <Home />
         <AboutMe />
         <Profile />

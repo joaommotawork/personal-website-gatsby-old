@@ -1,7 +1,7 @@
 module.exports = {
     siteMetadata: {
         title: `João Mota Web Developer & Designer`,
-        description: `My Personal Website`,
+        description: `Personal Website From João Mota Web Developer & Designer`,
         siteUrl: 'https://www.joaommota.com',
         author: `João Mota`
     },
