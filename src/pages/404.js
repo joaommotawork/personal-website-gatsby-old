@@ -46,7 +46,7 @@ const NotFoundPage = () => {
                     params={{
                         particles: {
                             number: {
-                                value: 1000,
+                                value: 500,
                                 density: {
                                     enable: false
                                 }
