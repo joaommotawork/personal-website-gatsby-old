@@ -33,6 +33,7 @@ const Contacts = () => {
 
     return (
         <div className={classes.ContactsContainer}>
+            <div className={classes.WaveWrapper}></div>
             <img className={classes.Wave} src={Wave} alt="Wave" />
             <canvas id="granimContacts" className={classes.Granim} />
             <Particles

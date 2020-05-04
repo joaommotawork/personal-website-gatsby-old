@@ -14,8 +14,8 @@ const AboutMe = () => {
     return (
         <VisibilitySensor
             partialVisibility
-            offset={500}
-            minTopValue={500}
+            offset={250}
+            minTopValue={250}
             onChange={onChange}
         >
             <Fade left opposite when={useShow}>
