@@ -98,8 +98,9 @@
 
 @media only screen and (max-width: 768px) {
     .ContactsContainer {
-        height: 200%;
-        width: 200%;
+        min-height: 800px;
+        height: 100%;
+        width: 100%;
         margin: 0;
         padding: 0;
     }
