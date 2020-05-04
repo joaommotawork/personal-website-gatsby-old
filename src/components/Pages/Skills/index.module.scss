@@ -108,6 +108,9 @@ b {
 }
 
 @media only screen and (max-width: 768px) {
+    .Skills {
+        min-height: 400px;
+    }
     .SkillsContainer {
         width: 100%;
         height: 100%;
