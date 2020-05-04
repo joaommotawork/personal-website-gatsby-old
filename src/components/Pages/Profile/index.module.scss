@@ -40,7 +40,8 @@ b {
 }
 
 .ProfilePicture {
-    height: 20rem;
+    height: 320px;
+    min-height: 320px;
 }
 
 .ProfileText {
@@ -105,5 +106,6 @@ b {
 
     .ProfilePicture {
         height: 200px;
+        min-height: 200px;
     }
 }
