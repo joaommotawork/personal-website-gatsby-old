@@ -1,0 +1,54 @@
+{
+    "SiteMetadata": {
+        "Keywords": "João Mota Web Developer & Designer, João Mota, Personal Website, Web Developer, Web Designer, HTML, CSS, JavaScript, React, Photoshop, Illustrator",
+        "Title": "João Mota Web Developer & Designer",
+        "Description": "Personal Website From João Mota Web Developer & Designer",
+        "Type": "Personal Website",
+        "SiteUrl": "https://www.joaommota.com",
+        "Author": "João Mota Web Developer & Designer"
+    },
+    "NotFound": "404: PAGE NOT FOUND",
+    "HomePage": "Homepage",
+    "Home": {
+        "LanguagePT": "Portuguese",
+        "LanguageEN": "English",
+        "Name": "MY NAME IS JOÃO MOTA",
+        "I": "I ♥⠀",
+        "Developing": "DEVELOPING",
+        "Design": "DESIGN",
+        "Sports": "SPORTS",
+        "Music": "MUSIC",
+        "Adventure": "ADVENTURE",
+        "Wave": "Wave"
+    },
+    "AboutMe": {
+        "Title": "ABOUT ME",
+        "Text1": "I'm a Student at ISTEC - Instituto Superior de Tecnologias Avançadas, my main goal is to develop Web Apps and Design for them, I work with: HTML, CSS, JavaScript, ReactJS, MySQL/PostgresSQL and have some basics in Java, Swift and C#.",
+        "Text2": "I know how to work with Photoshop and Illustrator and I'm currently learning how to edit videos in Premiere and work with After Effects.",
+        "Text3": "I am an ambitious, punctual, hardworking and innovative person, that can fit well in every environment and culture.",
+        "Text4": "I have acquired a good ability to communicate, negotiate, and interact with other people.",
+        "Text5": "Also, i have an excellent organizational, management and planning skills.",
+        "Text6": "Some of my Passions are: Judo, Skate, Surf, Music and Adventure, i love meeting new people and I'm open to new experiences."
+    },
+    "Profile": {
+        "Title": "PROFILE",
+        "Illustration": "Illustration",
+        "WebDeveloper": "WEB DEVELOPER",
+        "Designer": "DESIGNER",
+        "Calendar": "Calendar",
+        "Birthday": "BIRTHDAY",
+        "Flag": "Flag",
+        "Country": "COUNTRY"
+    },
+    "Skills": {
+        "Title": "SKILLS",
+        "Illustration": "Illustration"
+    },
+    "Contacts": {
+        "Wave": "Wave",
+        "DownloadCV": "DOWNLOAD MY CV",
+        "Light": "LIGHT",
+        "Dark": "DARK",
+        "ContactMe": "CONTACT ME"
+    }
+}

@@ -3,6 +3,7 @@ import ReactVivus from 'react-vivus'
 import Granim from 'granim'
 import Particles from 'react-particles-js'
 import Typed from 'react-typed'
+import { useTranslation } from 'react-i18next'
 
 import Logo from '../../../resources/logo/Logo_Animation.svg'
 import Wave from '../../../resources/svg/Wave.svg'
@@ -10,6 +11,13 @@ import Wave from '../../../resources/svg/Wave.svg'
 import classes from './index.module.scss'
 
 const Home = () => {
+    const { t, i18n } = useTranslation()
+
+    const changeLanguage = code => {
+        i18n.changeLanguage(code)
+        window.location.reload(true)
+    }
+
     useEffect(() => {
         let granimHome = new Granim({
             element: '#granimHome',
@@ -30,6 +38,31 @@ const Home = () => {
 
     return (
         <div className={classes.HomeContainer}>
+            <div className={classes.Languages}>
+                <button
+                    className={classes.ButtonSocial}
+                    type="button"
+                    onClick={() => changeLanguage('pt')}
+                >
+                    <img
+                        className={classes.LanguageIcon}
+                        src="https://hatscripts.github.io/circle-flags/flags/pt.svg"
+                        alt={t('Home.LanguagePT')}
+                    />
+                </button>
+
+                <button
+                    className={classes.ButtonSocial}
+                    type="button"
+                    onClick={() => changeLanguage('en')}
+                >
+                    <img
+                        className={classes.LanguageIcon}
+                        src="https://hatscripts.github.io/circle-flags/flags/us.svg"
+                        alt={t('Home.LanguageEN')}
+                    />
+                </button>
+            </div>
             <div className={classes.LogoContainer}>
                 <ReactVivus
                     id="logo"
@@ -44,20 +77,20 @@ const Home = () => {
                 <div className={classes.Text}>
                     <div className={classes.OutsideText}>
                         <Typed
-                            strings={['MY NAME IS JOÃO MOTA']}
+                            strings={[t('Home.Name')]}
                             typeSpeed={70}
                             showCursor={false}
                         />
                     </div>
                     <div className={classes.OutsideText}>
-                        <label className={classes.Love}>I ♥⠀</label>
+                        <label className={classes.Love}>{t('Home.I')}</label>
                         <Typed
                             strings={[
-                                'DEVELOPING',
-                                'DESIGN',
-                                'SPORTS',
-                                'MUSIC',
-                                'ADVENTURE'
+                                t('Home.Developing'),
+                                t('Home.Design'),
+                                t('Home.Sports'),
+                                t('Home.Music'),
+                                t('Home.Adventure')
                             ]}
                             typeSpeed={100}
                             backSpeed={100}
@@ -100,7 +133,7 @@ const Home = () => {
                 }}
             />
             <div className={classes.WaveWrapper}>
-                <img className={classes.Wave} src={Wave} alt="Wave" />
+                <img className={classes.Wave} src={Wave} alt={t('Home.Wave')} />
             </div>
         </div>
     )

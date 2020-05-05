@@ -3,6 +3,7 @@ import Fade from 'react-reveal/Fade'
 import Tilt from 'react-tilt'
 import ReactVivus from 'react-vivus'
 import { Tooltip, Zoom, withStyles } from '@material-ui/core'
+import { useTranslation } from 'react-i18next'
 
 import useWindowSize from '../../../hooks/useWindowSize'
 import Illustration from '../../../resources/illustrations/Programming.svg'
@@ -22,6 +23,7 @@ import IllustratorStatic from '../../../resources/skills/Skills_IllustratorStati
 import classes from './index.module.scss'
 
 const Skills = () => {
+    const { t } = useTranslation()
     const Size = useWindowSize()
 
     let FontTooltip = withStyles({
@@ -46,11 +48,10 @@ const Skills = () => {
         })(Tooltip)
     }
 
-    console.log('Size: ', Size.width, 'px ', Size.height, 'px')
     return (
         <Fade left>
             <div className={classes.SkillsMainContainer}>
-                <h1>SKILLS</h1>
+                <h1>{t('Skills.Title')}</h1>
                 <div className={classes.SkillsContainer}>
                     <div className={classes.Skills}>
                         <div className={classes.SkillsText}>
@@ -318,7 +319,7 @@ const Skills = () => {
                             <img
                                 className={classes.Illustration}
                                 src={Illustration}
-                                alt="Illustration"
+                                alt={t('Skills.Illustration')}
                             />
                         </Tilt>
                     </div>

@@ -1,7 +1,7 @@
 module.exports = {
     siteMetadata: {
-        title: `João Mota Web Developer & Designer`,
-        description: `Personal Website From João Mota Web Developer & Designer`,
+        title: `João Mota Web Developer & Designer || João Mota Programador Web & Designer`,
+        description: `Personal Website From João Mota Web Developer & Designer || Website Pessoal do Programador Web & Designer João Mota`,
         siteUrl: 'https://www.joaommota.com',
         author: `João Mota`
     },
@@ -59,6 +59,7 @@ module.exports = {
             options: {
                 trackingId: 'G-YP5RE7PSBY'
             }
-        }
+        },
+        `gatsby-plugin-react-helmet`
     ]
 }

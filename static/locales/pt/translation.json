@@ -1,0 +1,54 @@
+{
+    "SiteMetadata": {
+        "Keywords": "João Mota Programador Web & Designer, João Mota, Website Pessoal, Programador Web, Web Designer, HTML, CSS, JavaScript, React, Photoshop, Illustrator",
+        "Title": "João Mota Programador Web & Designer",
+        "Description": "Website Pessoal do Programador Web & Designer João Mota",
+        "Type": "Website Pessoal",
+        "SiteUrl": "https://www.joaommota.com",
+        "Author": "João Mota Programador Web & Designer"
+    },
+    "NotFound": "404: PÁGINA NÃO ENCONTRADA",
+    "HomePage": "Página Inicial",
+    "Home": {
+        "LanguagePT": "Português",
+        "LanguageEN": "Inglês",
+        "Name": "O MEU NOME É JOÃO MOTA",
+        "I": "EU ♥⠀",
+        "Developing": "PROGRAMAR",
+        "Design": "DESIGN",
+        "Sports": "DESPORTO",
+        "Music": "MÚSICA",
+        "Adventure": "AVENTURA",
+        "Wave": "Onda"
+    },
+    "AboutMe": {
+        "Title": "SOBRE MIM",
+        "Text1": "Olá o meu nome é João Mota e estudo no ISTEC - Instituto Superior de Tecnologias Avançadas, o meu objetivo principal é desenvolver Aplicações Web e fazer o Design das mesmas, trabalho com: HTML, CSS, JavaScript, ReactJS, MySQL/PostgresSQL e tenho bases em Java, Swift e C#.",
+        "Text2": "Sei trabalhar com Photoshop e Illustrator e estou a aprender a editar videos no Premiere e trabalhar com o After Effects.",
+        "Text3": "Sou uma pessoa ambiciosa, pontual, trabalhadora e inovadora que se enquadra bem em qualquer tipo de ambiente e cultura.",
+        "Text4": "Tenho adquirido uma boa capacidade de comunicar, negociar e interagir com outras pessoas.",
+        "Text5": "Além disso, tenho uma excelente capacidade de organização, gestão e planeamento.",
+        "Text6": "Algumas das minhas Paixões são: Judo, Skate, Surf, Música e Aventura, adoro conhecer novas pessoas e estou aberto a novas experiências."
+    },
+    "Profile": {
+        "Title": "PERFIL",
+        "Illustration": "Ilustração",
+        "WebDeveloper": "PROGRAMADOR WEB",
+        "Designer": "DESIGNER",
+        "Calendar": "Calendário",
+        "Birthday": "DATA DE NASCIMENTO",
+        "Flag": "Bandeira",
+        "Country": "PAÍS"
+    },
+    "Skills": {
+        "Title": "PROFICIÊNCIAS",
+        "Illustration": "Illustration"
+    },
+    "Contacts": {
+        "Wave": "Onda",
+        "DownloadCV": "DOWNLOAD DO MEU CV",
+        "Light": "CLARO",
+        "Dark": "ESCURO",
+        "ContactMe": "ENTRE EM CONTACTO"
+    }
+}
