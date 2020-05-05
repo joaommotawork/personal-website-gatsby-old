@@ -107,7 +107,7 @@ const Contacts = () => {
                                     <FontAwesomeIcon
                                         className={classes.Icons}
                                         icon={faLinkedinIn}
-                                        size="2x"
+                                        size="1x"
                                     />
                                 </a>
                             </button>
@@ -115,13 +115,13 @@ const Contacts = () => {
                         <div className={classes.BlockItem}>
                             <button className={classes.ButtonSocial}>
                                 <a
-                                    href="https://wa.me/351964758077?text=Contact%20Me%20for%20Business%20Inquiries"
+                                    href="https://wa.me/351964758077"
                                     target="__blank"
                                 >
                                     <FontAwesomeIcon
                                         className={classes.Icons}
                                         icon={faWhatsapp}
-                                        size="2x"
+                                        size="1x"
                                     />
                                 </a>
                             </button>
@@ -132,7 +132,7 @@ const Contacts = () => {
                                     <FontAwesomeIcon
                                         className={classes.Icons}
                                         icon={faEnvelope}
-                                        size="2x"
+                                        size="1x"
                                     />
                                 </a>
                             </button>

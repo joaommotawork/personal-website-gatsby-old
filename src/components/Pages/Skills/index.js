@@ -271,7 +271,7 @@ const Skills = () => {
                                         <FontTooltip
                                             disableFocusListener
                                             TransitionComponent={Zoom}
-                                            title="illustrator"
+                                            title="Illustrator"
                                             placement={
                                                 Size.width < 360
                                                     ? 'bottom'
