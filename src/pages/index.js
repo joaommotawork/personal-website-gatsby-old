@@ -40,7 +40,7 @@ const IndexPage = () => {
         'SiteMetadata.Keywords',
         'João Mota Web Developer & Designer, João Mota, Personal Website, Web Developer, Web Designer, HTML, CSS, JavaScript, React, Photoshop, Illustrator'
     )
-    const title = `${t('Homepage', 'Homepage')} | ${t(
+    const title = `${t('HomePage', 'Homepage')} | ${t(
         'SiteMetadata.Title',
         'João Mota Web Developer & Designer'
     )}`
