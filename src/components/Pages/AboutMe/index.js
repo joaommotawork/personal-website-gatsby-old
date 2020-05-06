@@ -8,7 +8,7 @@ const AboutMe = () => {
     const { t } = useTranslation('translation', { useSuspense: false })
 
     return (
-        <Fade left>
+        <Fade right>
             <div className={classes.AboutMeContainer}>
                 <h1>{t('AboutMe.Title')}</h1>
                 <div className={classes.Text}>

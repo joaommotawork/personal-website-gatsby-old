@@ -15,7 +15,7 @@ const Profile = () => {
     const { t } = useTranslation('translation', { useSuspense: false })
 
     return (
-        <Fade right>
+        <Fade left>
             <div className={classes.ProfileMainContainer}>
                 <h1>{t('Profile.Title')}</h1>
                 <div className={classes.ProfileContainer}>
@@ -39,10 +39,10 @@ const Profile = () => {
                             />
                         </div>
                         <div className={classes.ProfileText}>
-                            <label>
+                            <span>
                                 {t('Profile.WebDeveloper')} <b>&</b>{' '}
                                 {t('Profile.Designer')}
-                            </label>
+                            </span>
                             <div className={classes.ProfileTextWithIcon}>
                                 <div className={classes.BlockContainer}>
                                     <img
@@ -51,10 +51,10 @@ const Profile = () => {
                                         alt={t('Profile.Calendar')}
                                     />
                                     <div className={classes.BlockText}>
-                                        <label className={classes.Title}>
+                                        <span className={classes.Title}>
                                             {t('Profile.Birthday')}
-                                        </label>
-                                        <label>06/03/1999</label>
+                                        </span>
+                                        <span>06/03/1999</span>
                                     </div>
                                 </div>
                                 <div className={classes.BlockContainer}>
@@ -64,10 +64,10 @@ const Profile = () => {
                                         alt={t('Profile.Flag')}
                                     />
                                     <div className={classes.BlockText}>
-                                        <label className={classes.Title}>
+                                        <span className={classes.Title}>
                                             {t('Profile.Country')}
-                                        </label>
-                                        <label>PORTUGAL</label>
+                                        </span>
+                                        <span>PORTUGAL</span>
                                     </div>
                                 </div>
                             </div>

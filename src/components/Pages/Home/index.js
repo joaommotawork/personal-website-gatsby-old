@@ -58,7 +58,7 @@ const Home = () => {
                 >
                     <img
                         className={classes.LanguageIcon}
-                        src="https://hatscripts.github.io/circle-flags/flags/us.svg"
+                        src="https://hatscripts.github.io/circle-flags/flags/gb.svg"
                         alt={t('Home.LanguageEN')}
                     />
                 </button>
@@ -83,7 +83,7 @@ const Home = () => {
                         />
                     </div>
                     <div className={classes.OutsideText}>
-                        <label className={classes.Love}>{t('Home.I')}</label>
+                        <span className={classes.Love}>{t('Home.I')}</span>
                         <Typed
                             strings={[
                                 t('Home.Developing'),
@@ -92,8 +92,8 @@ const Home = () => {
                                 t('Home.Music'),
                                 t('Home.Adventure')
                             ]}
-                            typeSpeed={100}
-                            backSpeed={100}
+                            typeSpeed={70}
+                            backSpeed={70}
                             backDelay={1000}
                             showCursor={false}
                             loop

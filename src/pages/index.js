@@ -129,8 +129,8 @@ const IndexPage = () => {
             />
             <Layout>
                 <Home />
-                <AboutMe />
                 <Profile />
+                <AboutMe />
                 <Skills />
                 <Contacts />
             </Layout>

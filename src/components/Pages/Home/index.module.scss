@@ -2,7 +2,7 @@
 
 .HomeContainer {
     height: 100vh;
-    min-height: 1100px;
+    min-height: 1000px; //1100
     width: 100%;
     margin: 0;
     padding: 0;
@@ -85,6 +85,14 @@
     align-items: center;
     font-size: 100%;
     color: white;
+
+    .Love {
+        color: $background-color;
+    }
+
+    span {
+        margin-left: -10px;
+    }
 }
 
 .WaveWrapper {
