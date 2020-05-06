@@ -35,14 +35,6 @@ const Profile = () => {
                                 alt="Profile"
                                 effect="blur"
                                 src={ProfilePicture}
-                                placeholder={
-                                    <ReactLoading
-                                        type={'spin'}
-                                        color={'#008b7f'}
-                                        height={'25%'}
-                                        width={'25%'}
-                                    />
-                                }
                                 height="100%"
                                 width="100%"
                             />
