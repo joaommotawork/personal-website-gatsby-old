@@ -102,11 +102,19 @@ b {
     z-index: 1;
 }
 
+.BlockItem:focus {
+    outline: none;
+}
+
 .BlockItemStatic {
     position: absolute;
     width: 100px;
     height: 100px;
     z-index: 0;
+}
+
+.BlockItemStatic {
+    outline: none;
 }
 
 .BlockText {

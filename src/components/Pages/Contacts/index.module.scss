@@ -97,6 +97,10 @@
     }
 }
 
+.Button:focus {
+    outline: none;
+}
+
 .ButtonSocial {
     height: 60px;
     width: 60px;
@@ -113,6 +117,10 @@
         color: $accent-mainColor;
         font-size: 200%;
     }
+}
+
+.ButtonSocial:focus {
+    outline: none;
 }
 
 .Copyright {
@@ -192,6 +200,6 @@
     }
 
     .Copyright {
-        bottom: 0px;
+        bottom: -30px;
     }
 }

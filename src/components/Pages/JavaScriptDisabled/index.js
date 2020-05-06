@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Helmet } from 'react-helmet'
-import ReactLoading from 'react-loading'
 
 import Layout from '../../Layout'
 
 import classes from './index.module.scss'
 
-// import Logo from '../../../resources/logo/ExportFavicon.png'
+import Logo from '../../../resources/logo/ExportFavicon.png'
 import logo from '../../../resources/logo/MetaData.png'
 
 const NotFoundPage = () => {
@@ -110,10 +109,7 @@ const NotFoundPage = () => {
                 meta={meta}
                 defer={false}
             />
-            <div className={classes.Loading}>
-                <ReactLoading type={'spin'} color={'#008b7f'} height={'25%'} />
-            </div>
-            {/* <div className={classes.JavaScriptDisabledContainer}>
+            <div className={classes.JavaScriptDisabledContainer}>
                 <div className={classes.MessageContainer}>
                     <img
                         className={classes.Logo}
@@ -124,7 +120,7 @@ const NotFoundPage = () => {
                         {t('JavaScriptDisabled', 'PLEASE ENABLE JAVASCRIPT')}
                     </h1>
                 </div>
-            </div> */}
+            </div>
         </Layout>
     )
 }
