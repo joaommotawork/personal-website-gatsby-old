@@ -8,14 +8,12 @@ import { useTranslation } from 'react-i18next'
 import '../styles/global.scss'
 import classes from '../styles/index.module.scss'
 
+import logo from '../resources/logo/MetaData.png'
+
 const Layout = loadable(() => import('../components/Layout'), {
     fallback: (
         <div className={classes.Loading}>
-            <ReactLoading
-                type={'spin'}
-                color={'#008b7f'}
-                height={'25%'}
-            />
+            <ReactLoading type={'spin'} color={'#008b7f'} height={'25%'} />
         </div>
     )
 })
@@ -66,6 +64,10 @@ const IndexPage = () => {
             content: author
         },
         {
+            name: `description`,
+            content: description
+        },
+        {
             property: `og:title`,
             content: title
         },
@@ -74,16 +76,40 @@ const IndexPage = () => {
             content: type
         },
         {
-            name: `description`,
-            content: description
-        },
-        {
             property: `og:description`,
             content: description
         },
         {
             property: `og:website`,
             content: siteUrl
+        },
+        {
+            property: `og:url`,
+            content: siteUrl
+        },
+        {
+            property: `og:image`,
+            content: logo
+        },
+        {
+            property: `twitter:card`,
+            content: `summary_large_image`
+        },
+        {
+            property: `og:site_name`,
+            content: title
+        },
+        {
+            property: `twitter:image:alt`,
+            content: title
+        },
+        {
+            property: `twitter:site`,
+            content: `@johnymoty`
+        },
+        {
+            property: `fb:app_id`,
+            content: '583953398912118'
         }
     ]
 

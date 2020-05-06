@@ -9,6 +9,7 @@ import Layout from '../components/Layout'
 import classes from '../styles/404.module.scss'
 
 import Illustration404 from '../resources/illustrations/404.svg'
+import logo from '../resources/logo/MetaData.png'
 
 const NotFoundPage = () => {
     const { t } = useTranslation('translation', { useSuspense: false })
@@ -51,6 +52,10 @@ const NotFoundPage = () => {
             content: author
         },
         {
+            name: `description`,
+            content: description
+        },
+        {
             property: `og:title`,
             content: title
         },
@@ -59,16 +64,40 @@ const NotFoundPage = () => {
             content: type
         },
         {
-            name: `description`,
-            content: description
-        },
-        {
             property: `og:description`,
             content: description
         },
         {
             property: `og:website`,
             content: siteUrl
+        },
+        {
+            property: `og:url`,
+            content: siteUrl
+        },
+        {
+            property: `og:image`,
+            content: logo
+        },
+        {
+            property: `twitter:card`,
+            content: `summary_large_image`
+        },
+        {
+            property: `og:site_name`,
+            content: title
+        },
+        {
+            property: `twitter:image:alt`,
+            content: title
+        },
+        {
+            property: `twitter:site`,
+            content: `@johnymoty`
+        },
+        {
+            property: `fb:app_id`,
+            content: '583953398912118'
         }
     ]
 
