@@ -34,12 +34,24 @@ const IndexPage = () => {
         setLanguage(localStorage.getItem('i18nextLng'))
     }, [])
 
-    const keywords = t('SiteMetadata.Keywords')
-    const title = `${t('HomePage')} | ${t('SiteMetadata.Title')}`
-    const type = t('Type')
-    const description = t('SiteMetadata.Description')
-    const siteUrl = t('SiteMetadata.SiteUrl')
-    const author = t('SiteMetadata.Author')
+    const keywords = t(
+        'SiteMetadata.Keywords',
+        'João Mota Web Developer & Designer, João Mota, Personal Website, Web Developer, Web Designer, HTML, CSS, JavaScript, React, Photoshop, Illustrator'
+    )
+    const title = `${t('Homepage', 'Homepage')} | ${t(
+        'SiteMetadata.Title',
+        'João Mota Web Developer & Designer'
+    )}`
+    const type = t('Type', 'Personal Website')
+    const description = t(
+        'SiteMetadata.Description',
+        'Personal Website From João Mota Web Developer & Designer'
+    )
+    const siteUrl = t('SiteMetadata.SiteUrl', 'https://www.joaommota.com')
+    const author = t(
+        'SiteMetadata.Author',
+        'João Mota Web Developer & Designer'
+    )
     const meta = [
         {
             property: `charset`,
