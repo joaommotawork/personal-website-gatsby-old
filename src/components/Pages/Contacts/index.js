@@ -14,7 +14,7 @@ import pdfDark from '../../../resources/pdf/João Mota CV - Dark.pdf'
 import classes from './index.module.scss'
 
 const Contacts = () => {
-    const { t } = useTranslation()
+    const { t } = useTranslation('translation', { useSuspense: false })
     useEffect(() => {
         let granimContacts = new Granim({
             element: '#granimContacts',
@@ -150,7 +150,10 @@ const Contacts = () => {
                                     type="button"
                                     className={classes.ButtonSocial}
                                 >
-                                    <a href="mailto:joaommota.work@gmail.com">
+                                    <a
+                                        href="mailto:joaommota.work@gmail.com"
+                                        target="__blank"
+                                    >
                                         <FontAwesomeIcon
                                             className={classes.Icons}
                                             icon={faEnvelope}

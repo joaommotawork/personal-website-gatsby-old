@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next'
 import classes from './index.module.scss'
 
 const AboutMe = () => {
-    const { t } = useTranslation()
+    const { t } = useTranslation('translation', { useSuspense: false })
 
     return (
         <Fade left>

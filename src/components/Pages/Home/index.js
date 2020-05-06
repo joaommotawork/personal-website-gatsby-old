@@ -11,7 +11,7 @@ import Wave from '../../../resources/svg/Wave.svg'
 import classes from './index.module.scss'
 
 const Home = () => {
-    const { t, i18n } = useTranslation()
+    const { t, i18n } = useTranslation('translation', { useSuspense: false })
 
     const changeLanguage = code => {
         i18n.changeLanguage(code)

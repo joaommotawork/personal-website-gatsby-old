@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState, useEffect } from 'react'
 import loadable from '@loadable/component'
 import '../i18n'
 import ReactLoading from 'react-loading'
@@ -29,7 +29,12 @@ const Contacts = loadable(() => import('../components/Pages/Contacts'))
 const IndexPage = () => {
     const { t } = useTranslation('translation', { useSuspense: false })
 
-    const language = localStorage.getItem('i18nextLng')
+    const [language, setLanguage] = useState()
+
+    useEffect(() => {
+        setLanguage(localStorage.getItem('i18nextLng'))
+    }, [])
+
     const keywords = t('SiteMetadata.Keywords')
     const title = `${t('HomePage')} | ${t('SiteMetadata.Title')}`
     const type = t('Type')

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Granim from 'granim'
 import Particles from 'react-particles-js'
 import { useTranslation } from 'react-i18next'
@@ -11,9 +11,14 @@ import classes from '../styles/404.module.scss'
 import Illustration404 from '../resources/illustrations/404.svg'
 
 const NotFoundPage = () => {
-    const { t } = useTranslation()
+    const { t } = useTranslation('translation', { useSuspense: false })
 
-    const language = localStorage.getItem('i18nextLng')
+    const [language, setLanguage] = useState()
+
+    useEffect(() => {
+        setLanguage(localStorage.getItem('i18nextLng'))
+    }, [])
+
     const keywords = t('SiteMetadata.Keywords')
     const title = `${t('NotFound')} | ${t('SiteMetadata.Title')}`
     const type = t('Type')

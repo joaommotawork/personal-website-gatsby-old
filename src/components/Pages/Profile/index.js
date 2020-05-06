@@ -13,7 +13,7 @@ import Flag from '../../../resources/icons/Flag.svg'
 import classes from './index.module.scss'
 
 const Profile = () => {
-    const { t } = useTranslation()
+    const { t } = useTranslation('translation', { useSuspense: false })
 
     return (
         <Fade right>
