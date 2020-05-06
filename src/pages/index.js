@@ -4,9 +4,12 @@ import '../i18n'
 import ReactLoading from 'react-loading'
 import { Helmet } from 'react-helmet'
 import { useTranslation } from 'react-i18next'
+import { useIsJsEnabled } from 'gatsby-plugin-js-fallback'
 
 import '../styles/global.scss'
 import classes from '../styles/index.module.scss'
+
+import JavaScriptDisabled from '../components/Pages/JavaScriptDisabled'
 
 import logo from '../resources/logo/MetaData.png'
 
@@ -24,12 +27,13 @@ const Skills = loadable(() => import('../components/Pages/Skills'))
 const Contacts = loadable(() => import('../components/Pages/Contacts'))
 
 const IndexPage = () => {
+    const isJsEnabled = useIsJsEnabled()
     const { t } = useTranslation('translation', { useSuspense: false })
 
-    const [language, setLanguage] = useState()
+    const [lang, setLang] = useState()
 
     useEffect(() => {
-        setLanguage(localStorage.getItem('i18nextLng'))
+        setLang(localStorage.getItem('i18nextLng'))
     }, [])
 
     const keywords = t(
@@ -113,11 +117,11 @@ const IndexPage = () => {
         }
     ]
 
-    return (
+    return isJsEnabled ? (
         <Fragment>
             <Helmet
                 htmlAttributes={{
-                    language
+                    lang
                 }}
                 title={title}
                 meta={meta}
@@ -131,6 +135,8 @@ const IndexPage = () => {
                 <Contacts />
             </Layout>
         </Fragment>
+    ) : (
+        <JavaScriptDisabled />
     )
 }
 

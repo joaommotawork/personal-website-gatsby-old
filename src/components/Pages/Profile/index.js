@@ -2,7 +2,6 @@ import React from 'react'
 import Fade from 'react-reveal/Fade'
 import Tilt from 'react-tilt'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
-import ReactLoading from 'react-loading'
 import { useTranslation } from 'react-i18next'
 
 import Illustration from '../../../resources/illustrations/Profile.svg'

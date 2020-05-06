@@ -26,10 +26,19 @@ module.exports = {
                 background_color: `#ffffff`,
                 theme_color: `#008b7f`,
                 display: `standalone`,
-                prefer_related_applications: true
+                prefer_related_applications: true,
+                cache_busting_mode: 'none'
             }
         },
-        `gatsby-plugin-offline`,
+        {
+            resolve: `gatsby-plugin-offline`,
+            options: {
+                precachePages: [`/`],
+                workboxConfig: {
+                    globPatterns: ['**/*']
+                }
+            }
+        },
         `gatsby-plugin-sitemap`,
         {
             resolve: 'gatsby-plugin-robots-txt',
@@ -60,6 +69,7 @@ module.exports = {
                 trackingId: 'UA-157628839-1'
             }
         },
-        `gatsby-plugin-react-helmet`
+        `gatsby-plugin-react-helmet`,
+        `gatsby-plugin-js-fallback`
     ]
 }

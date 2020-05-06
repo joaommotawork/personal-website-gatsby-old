@@ -8,6 +8,10 @@
         "Author": "João Mota Programador Web & Designer"
     },
     "NotFound": "404: PÁGINA NÃO ENCONTRADA",
+    "NotFoundTitle": "404: Página Não Encontrada",
+    "Illustration": "Ilustração",
+    "JavaScriptDisabled": "ATIVE O JAVASCRIPT POR FAVOR",
+    "JavaScriptDisabledTitle": "Ative o JavaScript Por Favor",
     "HomePage": "Página Inicial",
     "Home": {
         "LanguagePT": "Português",

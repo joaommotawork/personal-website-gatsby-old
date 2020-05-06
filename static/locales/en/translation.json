@@ -9,6 +9,9 @@
     },
     "NotFound": "404: PAGE NOT FOUND",
     "NotFoundTitle": "404: Page Not Found",
+    "Illustration": "Illustration",
+    "JavaScriptDisabled": "PLEASE ENABLE JAVASCRIPT",
+    "JavaScriptDisabledTitle": "Please Enable JavaScript",
     "HomePage": "Homepage",
     "Home": {
         "LanguagePT": "Portuguese",

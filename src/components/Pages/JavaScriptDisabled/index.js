@@ -1,15 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import Granim from 'granim'
-import Particles from 'react-particles-js'
 import { useTranslation } from 'react-i18next'
 import { Helmet } from 'react-helmet'
 
-import Layout from '../components/Layout'
+import Layout from '../../Layout'
 
-import classes from '../styles/404.module.scss'
+import classes from './index.module.scss'
 
-import Illustration404 from '../resources/illustrations/404.svg'
-import logo from '../resources/logo/MetaData.png'
+import Logo from '../../../resources/logo/ExportFavicon.png'
+import logo from '../../../resources/logo/MetaData.png'
 
 const NotFoundPage = () => {
     const { t } = useTranslation('translation', { useSuspense: false })
@@ -24,10 +22,10 @@ const NotFoundPage = () => {
         'SiteMetadata.Keywords',
         'João Mota Web Developer & Designer, João Mota, Personal Website, Web Developer, Web Designer, HTML, CSS, JavaScript, React, Photoshop, Illustrator'
     )
-    const title = `${t('NotFoundTitle', '404: Page Not Found')} | ${t(
-        'SiteMetadata.Title',
-        'João Mota Web Developer & Designer'
-    )}`
+    const title = `${t(
+        'JavaScriptDisabledTitle',
+        'Please Enable JavaScript'
+    )} | ${t('SiteMetadata.Title', 'João Mota Web Developer & Designer')}`
     const type = t('Type', 'Personal Website')
     const description = t(
         'SiteMetadata.Description',
@@ -101,24 +99,6 @@ const NotFoundPage = () => {
         }
     ]
 
-    useEffect(() => {
-        let granimNotFound = new Granim({
-            element: '#granimNotFound',
-            name: 'granim',
-            opacity: [1, 1],
-            transitionSpeed: 1000,
-            states: {
-                'default-state': {
-                    gradients: [
-                        ['#008b7f', '#008b7f'],
-                        ['#008b7f', '#005b96'],
-                        ['#011f4b', '#008b7f']
-                    ]
-                }
-            }
-        })
-    }, [])
-
     return (
         <Layout>
             <Helmet
@@ -129,46 +109,17 @@ const NotFoundPage = () => {
                 meta={meta}
                 defer={false}
             />
-            <div className={classes.NotFoundContainer}>
+            <div className={classes.JavaScriptDisabledContainer}>
                 <div className={classes.MessageContainer}>
                     <img
-                        className={classes.Illustration}
-                        src={Illustration404}
-                        alt="Illustration"
+                        className={classes.Logo}
+                        src={Logo}
+                        alt={t('Illustration')}
                     />
-                    <h1>{t('NotFound', '404: PAGE NOT FOUND')}</h1>
+                    <h1>
+                        {t('JavaScriptDisabled', 'PLEASE ENABLE JAVASCRIPT')}
+                    </h1>
                 </div>
-                <canvas id="granimNotFound" className={classes.Granim} />
-                <Particles
-                    className={classes.Particles}
-                    params={{
-                        particles: {
-                            number: {
-                                value: 500,
-                                density: {
-                                    enable: false
-                                }
-                            },
-                            size: {
-                                value: 3,
-                                random: true,
-                                anim: {
-                                    speed: 10,
-                                    size_min: 0.5
-                                }
-                            },
-                            line_linked: {
-                                enable: false
-                            },
-                            move: {
-                                random: true,
-                                speed: 1,
-                                direction: 'top',
-                                out_mode: 'out'
-                            }
-                        }
-                    }}
-                />
             </div>
         </Layout>
     )
