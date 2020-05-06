@@ -85,14 +85,14 @@
     align-items: center;
     font-size: 100%;
     color: white;
+}
 
-    .Love {
-        color: $background-color;
-    }
-
-    span {
-        margin-left: -10px;
-    }
+.Icons {
+    color: $background-color;
+    height: 10%;
+    width: 10%;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .WaveWrapper {

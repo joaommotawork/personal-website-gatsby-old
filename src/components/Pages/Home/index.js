@@ -3,6 +3,8 @@ import ReactVivus from 'react-vivus'
 import Granim from 'granim'
 import Particles from 'react-particles-js'
 import Typed from 'react-typed'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import { useTranslation } from 'react-i18next'
 
 import Logo from '../../../resources/logo/Logo_Animation.svg'
@@ -83,7 +85,14 @@ const Home = () => {
                         />
                     </div>
                     <div className={classes.OutsideText}>
-                        <span className={classes.Love}>{t('Home.I')}</span>
+                        <span className={classes.Love}>
+                            {t('Home.I')}
+                            <FontAwesomeIcon
+                                className={classes.Icons}
+                                icon={faHeart}
+                                size="1x"
+                            />
+                        </span>
                         <Typed
                             strings={[
                                 t('Home.Developing'),
