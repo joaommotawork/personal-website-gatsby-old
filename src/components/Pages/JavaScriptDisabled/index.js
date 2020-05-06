@@ -22,10 +22,10 @@ const NotFoundPage = () => {
         'SiteMetadata.Keywords',
         'João Mota Web Developer & Designer, João Mota, Personal Website, Web Developer, Web Designer, HTML, CSS, JavaScript, React, Photoshop, Illustrator'
     )
-    const title = `${t(
-        'JavaScriptDisabledTitle',
-        'Please Enable JavaScript'
-    )} | ${t('SiteMetadata.Title', 'João Mota Web Developer & Designer')}`
+    const title = `${t('HomePage', 'Homepage')} | ${t(
+        'SiteMetadata.Title',
+        'João Mota Web Developer & Designer'
+    )}`
     const type = t('Type', 'Personal Website')
     const description = t(
         'SiteMetadata.Description',
