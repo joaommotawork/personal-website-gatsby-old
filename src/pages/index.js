@@ -15,7 +15,6 @@ const Layout = loadable(() => import('../components/Layout'), {
                 type={'spin'}
                 color={'#008b7f'}
                 height={'25%'}
-                width={'25%'}
             />
         </div>
     )

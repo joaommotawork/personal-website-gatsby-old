@@ -1,7 +1,8 @@
 @import '../../../styles/variables.scss';
 
 .ContactsContainer {
-    height: 600px;
+    height: 700px;
+    min-height: 700px;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -11,6 +12,7 @@
     position: absolute;
     transform: rotate(180deg);
     margin: -1px 0 0 0;
+    max-height: 400px;
     z-index: 0;
 }
 
