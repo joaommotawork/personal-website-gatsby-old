@@ -34,6 +34,23 @@
 
     h1 {
         font-size: 500%;
+        text-align: center;
         color: $background-color;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .MessageContainer {
+        h1 {
+            font-size: 250%;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .MessageContainer {
+        h1 {
+            font-size: 250%;
+        }
     }
 }
