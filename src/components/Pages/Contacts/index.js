@@ -86,7 +86,6 @@ const Contacts = () => {
                                             className={classes.Icons}
                                             icon={faFileAlt}
                                         />
-                                        {'⠀'}
                                         {t('Contacts.Light')}
                                     </a>
                                 </button>
@@ -101,7 +100,6 @@ const Contacts = () => {
                                             className={classes.Icons}
                                             icon={faFileAlt}
                                         />
-                                        {'⠀'}
                                         {t('Contacts.Dark')}
                                     </a>
                                 </button>
