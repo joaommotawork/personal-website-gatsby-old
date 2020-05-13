@@ -26,13 +26,23 @@
         "Wave": "Onda"
     },
     "AboutMe": {
-        "Title": "SOBRE MIM",
-        "Text1": "Olá o meu nome é João Mota e estudo no ISTEC - Instituto Superior de Tecnologias Avançadas, o meu objetivo principal é desenvolver Aplicações Web e fazer o Design das mesmas, trabalho com: HTML, CSS, JavaScript, ReactJS, MySQL/PostgresSQL e tenho bases em Java, Swift e C#.",
-        "Text2": "Sei trabalhar com Photoshop e Illustrator e estou a aprender a editar videos no Premiere e trabalhar com o After Effects.",
-        "Text3": "Sou uma pessoa ambiciosa, pontual, trabalhadora e inovadora que se enquadra bem em qualquer tipo de ambiente e cultura.",
-        "Text4": "Tenho adquirido uma boa capacidade de comunicar, negociar e interagir com outras pessoas.",
-        "Text5": "Além disso, tenho uma excelente capacidade de organização, gestão e planeamento.",
-        "Text6": "Algumas das minhas Paixões são: Judo, Skate, Surf, Música e Aventura, adoro conhecer novas pessoas e estou aberto a novas experiências."
+        "Text1": "Olá, o meu nome é João Mota.",
+        "Text2": "Sou de Portugal e estou de momento a estudar Programação no ISTEC - Instituto Superior de Tecnologias Avançadas.",
+        "Text3": "Procuro desenvolver e desenhar aplicações web profissionalmente.",
+        "Text4": "As minhas competências são:",
+        "Image": "Imagem - Adobe Illustrator & Adobe Photoshop.",
+        "UX/UI": "UX/UI - Adobe XD.",
+        "Front-End": "Front-End - JavasScript, ReactJS, HTML, CSS, SCSS, among others.",
+        "Back-End": "Back-End - NodeJS, PostgreSQL/MySQL.",
+        "Mobile": "Mobile - React Native.",
+        "Learning": "Estou de momento a aprender - Java (Android), C# (Xamarin), Swift (iOS), Adobe Premiere (Video) & Adobe After Effects (Video).",
+        "Management": "Gestão - JIRA, Trello & Slack.",
+        "Methodologies": "Metodologia - Agile Framework (SCRUM).",
+        "Text5": "Sou ambicioso, pontual, proativo, gosto de inovar e adapto-me bem a qualquer tipo de ambiente e cultura.",
+        "Text6": "Se tiveres a oportunidade de trabalhar comigo irás reparar que tenho adquirido uma boa capacidade de comunicar, negociar e interagir com outras pessoas.",
+        "Text7": "Além disso, tenho uma excelente capacidade de organização, gestão e planeamento.",
+        "Text8": "Algumas das minhas paixões/hobbies são: Skate, Surf, Judo, Cubing, Música e Aventura, entre muitas outras.",
+        "Text9": "Adoro conhecer novas pessoas e estou aberto a novas experiências."
     },
     "Profile": {
         "Title": "PERFIL",
