@@ -23,8 +23,8 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: `joaommota`,
-                short_name: `joaommota`,
+                name: `João Mota`,
+                short_name: `João Mota`,
                 start_url: `/`,
                 icon: 'src/resources/logo/ExportFavicon.png',
                 background_color: `#ffffff`,
