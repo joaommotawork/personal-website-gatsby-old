@@ -47,8 +47,10 @@
     "vivus": "^0.4.5"
   },
   "devDependencies": {
+    "cypress": "^4.5.0",
     "env-cmd": "^10.1.0",
-    "prettier": "2.0.5"
+    "prettier": "2.0.5",
+    "start-server-and-test": "^1.11.0"
   },
   "keywords": [
     "gatsby"
@@ -61,7 +63,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "cy:open": "cypress open",
+    "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open"
   },
   "repository": {
     "type": "git",
