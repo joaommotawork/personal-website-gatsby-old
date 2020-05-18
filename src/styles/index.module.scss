@@ -7,3 +7,9 @@
     justify-content: center;
     align-items: center;
 }
+
+.ReadingProgress {
+    position: fixed;
+    z-index: 9999;
+    border: 1px solid $background-color;
+}

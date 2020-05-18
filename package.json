@@ -41,14 +41,20 @@
     "react-loading": "^2.0.3",
     "react-particles-js": "^3.2.1",
     "react-reveal": "^1.2.2",
+    "react-scroll-progress-read": "0.0.13",
     "react-tilt": "^0.1.4",
     "react-typed": "^1.2.0",
     "react-vivus": "0.0.2",
     "vivus": "^0.4.5"
   },
   "devDependencies": {
+    "babel-jest": "^26.0.1",
+    "babel-preset-gatsby": "^0.4.2",
     "env-cmd": "^10.1.0",
-    "prettier": "2.0.5"
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.0.1",
+    "prettier": "2.0.5",
+    "react-test-renderer": "^16.13.1"
   },
   "keywords": [
     "gatsby"
@@ -60,7 +66,8 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
