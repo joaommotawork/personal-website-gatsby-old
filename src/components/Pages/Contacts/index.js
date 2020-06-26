@@ -1,6 +1,4 @@
-import React, { useEffect } from 'react'
-import Granim from 'granim'
-import Particles from 'react-particles-js'
+import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFileAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedinIn, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
@@ -15,23 +13,6 @@ import classes from './index.module.scss'
 
 const Contacts = () => {
     const { t } = useTranslation('translation', { useSuspense: false })
-    useEffect(() => {
-        let granimContacts = new Granim({
-            element: '#granimContacts',
-            name: 'granim',
-            opacity: [1, 1],
-            transitionSpeed: 1000,
-            states: {
-                'default-state': {
-                    gradients: [
-                        ['#008b7f', '#008b7f'],
-                        ['#008b7f', '#005b96'],
-                        ['#011f4b', '#008b7f']
-                    ]
-                }
-            }
-        })
-    }, [])
 
     const FullDate = new Date()
 
@@ -40,37 +21,6 @@ const Contacts = () => {
     return (
         <div className={classes.ContactsContainer}>
             <img className={classes.Wave} src={Wave} alt={t('Contacts.Wave')} />
-            <canvas id="granimContacts" className={classes.Granim} />
-            <Particles
-                className={classes.Particles}
-                params={{
-                    particles: {
-                        number: {
-                            value: 500,
-                            density: {
-                                enable: false
-                            }
-                        },
-                        size: {
-                            value: 3,
-                            random: true,
-                            anim: {
-                                speed: 10,
-                                size_min: 0.5
-                            }
-                        },
-                        line_linked: {
-                            enable: false
-                        },
-                        move: {
-                            random: true,
-                            speed: 1,
-                            direction: 'top',
-                            out_mode: 'out'
-                        }
-                    }
-                }}
-            />
             <div className={classes.Container}>
                 <div className={classes.MainContainer}>
                     <div className={classes.BlockMainContainer}>

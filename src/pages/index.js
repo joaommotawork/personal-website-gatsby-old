@@ -2,7 +2,6 @@ import React, { Fragment, useState, useEffect } from 'react'
 import loadable from '@loadable/component'
 import '../i18n'
 import ReactLoading from 'react-loading'
-import ScrollProgressRead from 'react-scroll-progress-read'
 import { Helmet } from 'react-helmet'
 import { useTranslation } from 'react-i18next'
 import { useIsJsEnabled } from 'gatsby-plugin-js-fallback'
@@ -23,7 +22,6 @@ const Layout = loadable(() => import('../components/Layout'), {
 })
 const Home = loadable(() => import('../components/Pages/Home'))
 const AboutMe = loadable(() => import('../components/Pages/AboutMe'))
-const Profile = loadable(() => import('../components/Pages/Profile'))
 const Skills = loadable(() => import('../components/Pages/Skills'))
 const Contacts = loadable(() => import('../components/Pages/Contacts'))
 
@@ -128,16 +126,8 @@ const IndexPage = () => {
                 meta={meta}
                 defer={false}
             />
-            <div className={classes.ReadingProgress}>
-                <ScrollProgressRead
-                    backgroundColor="#ffffff"
-                    barColor="#008b7f"
-                    height="5px"
-                />
-            </div>
             <Layout>
                 <Home />
-                <Profile />
                 <AboutMe />
                 <Skills />
                 <Contacts />

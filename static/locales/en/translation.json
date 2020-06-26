@@ -30,35 +30,28 @@
         "Text1": "Hello, my name is João Mota.",
         "Text2": "I'm from Portugal and I'm currently studying Computer Programming at ISTEC - Instituto Superior de Tecnologias Avançadas.",
         "Text3": "I'm looking to professionally develop and design web apps.",
-        "Text4": "My technical skills are:",
+        "Text4": "I'm an ambitious, punctual, hardworking and innovative person that fits well into every environment and culture.",
+        "Text5": "While working with me you will realize that I have acquired the ability to communicate, negotiate and interact with other people.",
+        "Text6": "In addition I also have excellent organizational, management and planning skills.",
+        "Text7": "Some of my passions/hobbies are: Skate, Surf, Judo, Cubing, Music & Adventure, and much more.",
+        "Text8": "I love meeting new people and I'm open to new experiences."
+    },
+    "Profile": {
+        "Title": "PROFILE",
+        "WebDeveloper": "WEB DEVELOPER",
+        "Designer": "DESIGNER"
+    },
+    "Skills": {
+        "Title": "SKILLS",
+        "SCRUM": "Scrum Fundamentals Certified (SFC)",
         "Image": "Image - Adobe Illustrator & Adobe Photoshop.",
-        "UX/UI": "UX/UI - Adobe XD.",
+        "UXUI": "UX/UI - Adobe XD.",
         "Front-End": "Front-End - JavasScript, ReactJS, HTML, CSS, SCSS, among others.",
         "Back-End": "Back-End - NodeJS, PostgreSQL/MySQL.",
         "Mobile": "Mobile - React Native.",
         "Learning": "I'm currently Learning - Java (Android), C# (Xamarin), Swift (iOS), Adobe Premiere (Video) & Adobe After Effects (Video).",
         "Management": "Management - JIRA, Trello & Slack.",
-        "Methodologies": "Methodologies - Agile Framework (SCRUM).",
-        "Text5": "I'm an ambitious, punctual, hardworking and innovative person that fits well into every environment and culture.",
-        "Text6": "While working with me you will realize that I have acquired the ability to communicate, negotiate and interact with other people.",
-        "Text7": "In addition I also have excellent organizational, management and planning skills.",
-        "Text8": "Some of my passions/hobbies are: Skate, Surf, Judo, Cubing, Music & Adventure, and much more.",
-        "Text9": "I love meeting new people and I'm open to new experiences."
-    },
-    "Profile": {
-        "Title": "PROFILE",
-        "Illustration": "Illustration",
-        "WebDeveloper": "WEB DEVELOPER",
-        "Designer": "DESIGNER",
-        "Calendar": "Calendar",
-        "Birthday": "BIRTHDAY",
-        "Flag": "Flag",
-        "Country": "COUNTRY"
-    },
-    "Skills": {
-        "Title": "SKILLS",
-        "SCRUM": "Scrum Fundamentals Certified (SFC)",
-        "Illustration": "Illustration"
+        "Methodologies": "Methodologies - Agile Framework (SCRUM)."
     },
     "Contacts": {
         "Wave": "Wave",

@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Granim from 'granim'
-import Particles from 'react-particles-js'
 import { useTranslation } from 'react-i18next'
 import { Helmet } from 'react-helmet'
 
@@ -101,24 +99,6 @@ const NotFoundPage = () => {
         }
     ]
 
-    useEffect(() => {
-        let granimNotFound = new Granim({
-            element: '#granimNotFound',
-            name: 'granim',
-            opacity: [1, 1],
-            transitionSpeed: 1000,
-            states: {
-                'default-state': {
-                    gradients: [
-                        ['#008b7f', '#008b7f'],
-                        ['#008b7f', '#005b96'],
-                        ['#011f4b', '#008b7f']
-                    ]
-                }
-            }
-        })
-    }, [])
-
     return (
         <Layout>
             <Helmet
@@ -138,37 +118,6 @@ const NotFoundPage = () => {
                     />
                     <h1>{t('NotFound', '404: PAGE NOT FOUND')}</h1>
                 </div>
-                <canvas id="granimNotFound" className={classes.Granim} />
-                <Particles
-                    className={classes.Particles}
-                    params={{
-                        particles: {
-                            number: {
-                                value: 500,
-                                density: {
-                                    enable: false
-                                }
-                            },
-                            size: {
-                                value: 3,
-                                random: true,
-                                anim: {
-                                    speed: 10,
-                                    size_min: 0.5
-                                }
-                            },
-                            line_linked: {
-                                enable: false
-                            },
-                            move: {
-                                random: true,
-                                speed: 1,
-                                direction: 'top',
-                                out_mode: 'out'
-                            }
-                        }
-                    }}
-                />
             </div>
         </Layout>
     )

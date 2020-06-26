@@ -1,12 +1,12 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
-import Tilt from 'react-tilt'
 import ReactVivus from 'react-vivus'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { Tooltip, Zoom, withStyles } from '@material-ui/core'
 import { useTranslation } from 'react-i18next'
 
 import useWindowSize from '../../../hooks/useWindowSize'
-import Illustration from '../../../resources/illustrations/Programming.svg'
 import HTML from '../../../resources/skills/Skills_HTML.svg'
 import HTMLStatic from '../../../resources/skills/Skills_HTMLStatic.svg'
 import CSS from '../../../resources/skills/Skills_CSS.svg'
@@ -346,14 +346,77 @@ const Skills = () => {
                             {t('Skills.SCRUM')}
                         </a>
                     </div>
-                    <div className={classes.Illustration}>
-                        <Tilt className="Tilt" options={{ max: 10 }}>
-                            <img
-                                className={classes.Illustration}
-                                src={Illustration}
-                                alt={t('Skills.Illustration')}
-                            />
-                        </Tilt>
+                    <div className={classes.SkillsText}>
+                        <div className={classes.SkillsColumns}>
+                            <ul className={classes.Columns}>
+                                <li>
+                                    <FontAwesomeIcon
+                                        className={classes.Icons}
+                                        icon={faChevronRight}
+                                        size="1x"
+                                    />
+                                    {t('Skills.Image')}
+                                </li>
+                                <li>
+                                    <FontAwesomeIcon
+                                        className={classes.Icons}
+                                        icon={faChevronRight}
+                                        size="1x"
+                                    />
+                                    {t('Skills.UXUI')}
+                                </li>
+                                <li>
+                                    <FontAwesomeIcon
+                                        className={classes.Icons}
+                                        icon={faChevronRight}
+                                        size="1x"
+                                    />
+                                    {t('Skills.Front-End')}
+                                </li>
+                                <li>
+                                    <FontAwesomeIcon
+                                        className={classes.Icons}
+                                        icon={faChevronRight}
+                                        size="1x"
+                                    />
+                                    {t('Skills.Back-End')}
+                                </li>
+                            </ul>
+                            <ul className={classes.Columns}>
+                                <li>
+                                    <FontAwesomeIcon
+                                        className={classes.Icons}
+                                        icon={faChevronRight}
+                                        size="1x"
+                                    />
+                                    {t('Skills.Mobile')}
+                                </li>
+                                <li>
+                                    <FontAwesomeIcon
+                                        className={classes.Icons}
+                                        icon={faChevronRight}
+                                        size="1x"
+                                    />
+                                    {t('Skills.Learning')}
+                                </li>
+                                <li>
+                                    <FontAwesomeIcon
+                                        className={classes.Icons}
+                                        icon={faChevronRight}
+                                        size="1x"
+                                    />
+                                    {t('Skills.Management')}
+                                </li>
+                                <li>
+                                    <FontAwesomeIcon
+                                        className={classes.Icons}
+                                        icon={faChevronRight}
+                                        size="1x"
+                                    />
+                                    {t('Skills.Methodologies')}
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
