@@ -6,7 +6,7 @@ import Layout from '../../Layout'
 
 import classes from './index.module.scss'
 
-import Logo from '../../../resources/logo/ExportFavicon.png'
+import Logo from '../../../resources/logo/ExportJavaScript.png'
 import logo from '../../../resources/logo/MetaData.png'
 
 const NotFoundPage = () => {
