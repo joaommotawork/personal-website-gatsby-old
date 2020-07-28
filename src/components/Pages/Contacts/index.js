@@ -65,7 +65,7 @@ const Contacts = () => {
                                     className={classes.ButtonSocial}
                                 >
                                     <a
-                                        href="https://www.linkedin.com/in/johnymoty/"
+                                        href="https://www.linkedin.com/in/joaommota"
                                         target="__blank"
                                     >
                                         <FontAwesomeIcon

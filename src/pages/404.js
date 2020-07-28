@@ -91,7 +91,7 @@ const NotFoundPage = () => {
         },
         {
             property: `twitter:site`,
-            content: `@johnymoty`
+            content: `@joaommota`
         },
         {
             property: `fb:app_id`,
