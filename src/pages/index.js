@@ -108,7 +108,7 @@ const IndexPage = () => {
         },
         {
             property: `twitter:site`,
-            content: `@joaommota`
+            content: `@joaommotame`
         },
         {
             property: `fb:app_id`,
